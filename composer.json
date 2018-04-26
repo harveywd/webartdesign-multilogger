@@ -1,0 +1,26 @@
+{
+    "name": "webartdesign/multilogger",
+    "description": "A Laravel multi logger",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Harvey",
+            "email": "harvey@support.webartdesign.com.au"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "graham-campbell/flysystem": "^4.1.0"
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Webartdesign\\Multilogger\\MultiloggerServiceProvider"
+        ],
+        "aliases": {
+          "Multilogger": "Webartdesign\\Multilogger\\Facade"
+        }
+      }
+    }
+}
